@@ -92,12 +92,12 @@ class PartyBot(commands.Bot):
                 details=f"Logged in as {self.user.display_name}.",
                 state=f"{self.party.leader.display_name}'s party.",
                 large_image="skull_trooper",
-                large_text="discord.gg/fnpy",
+                large_text="Wellcome to bot lobby {max.player.in.lobby}",
                 small_image="outfit",
                 small_text=outfit,
                 start=int(start_time),
                 party_id=self.party.id,
-                party_size=[self.party.member_count, 16],
+                party_size=[self.party.member_count, 4],
                 join=uuid.uuid4().hex
             )
 
