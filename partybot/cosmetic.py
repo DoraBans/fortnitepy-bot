@@ -80,8 +80,8 @@ class CosmeticCommands(commands.Cog):
     async def skin(self, ctx: fortnitepy.ext.commands.Context, *, content: str) -> None:
         try:
             cosmetic = await self.bot.fortnite_api.cosmetics.get_cosmetic(
-                lang="en",
-                searchLang="en",
+                lang="de",
+                searchLang="de",
                 matchMethod="contains",
                 name=content,
                 backendType="AthenaCharacter"
@@ -104,8 +104,8 @@ class CosmeticCommands(commands.Cog):
     async def backpack(self, ctx: fortnitepy.ext.commands.Context, *, content: str) -> None:
         try:
             cosmetic = await self.bot.fortnite_api.cosmetics.get_cosmetic(
-                lang="en",
-                searchLang="en",
+                lang="de",
+                searchLang="de",
                 matchMethod="contains",
                 name=content,
                 backendType="AthenaBackpack"
@@ -201,8 +201,8 @@ class CosmeticCommands(commands.Cog):
     async def emoji(self, ctx: fortnitepy.ext.commands.Context, *, content: str) -> None:
         try:
             cosmetic = await self.bot.fortnite_api.cosmetics.get_cosmetic(
-                lang="en",
-                searchLang="en",
+                lang="ru",
+                searchLang="ru",
                 matchMethod="contains",
                 name=content,
                 backendType="AthenaEmoji"
