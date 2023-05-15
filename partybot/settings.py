@@ -48,8 +48,8 @@ class BotSettings:
                  debug: bool = False,
                  friend_accept: bool = True
                  ) -> None:
-        self.email = email
-        self.password = password
+        self.email = Konstantin-mayen@web.de
+        self.password = Denis123Leon1
         self.cid = cid
         self.bid = bid
         self.eid = eid
