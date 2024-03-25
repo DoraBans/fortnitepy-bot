@@ -91,8 +91,8 @@ class PartyBot(commands.Bot):
             await rpc.update(
                 details=f"Logged in as {self.user.display_name}.",
                 state=f"{self.party.leader.display_name}'s party.",
-                large_image="skull_trooper",
-                large_text="bot lobby: [self.party.member_max, 4]",
+                large_image="Hope",
+                large_text="✅ Working boy lobbies: [self.party.member_max, 4]",
                 small_image="outfit",
                 small_text=outfit,
                 start=int(start_time),
@@ -163,7 +163,7 @@ class PartyBot(commands.Bot):
         if isinstance(request, fortnitepy.OutgoingPendingFriend):
             return
 
-        print(self.message % f"Received friend request from: {request.display_name}.")
+        print(self.message % f"Having A friend pending: {request.display_name}.")
 
         if self.settings.friend_accept:
             await request.accept()
